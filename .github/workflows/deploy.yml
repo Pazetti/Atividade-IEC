@@ -173,7 +173,7 @@ jobs:
           username: ${{ secrets.EMAIL }}
           password: ${{ secrets.EMAIL_TOKEN }}
           subject: "Falha pipeline Actions"
-          to: vanessacapuano1@gmail.com
+          to: fe.dsm.vot.001@gmail.com
           from: ${{ secrets.EMAIL }}
           body: |
             A execução falhou.
