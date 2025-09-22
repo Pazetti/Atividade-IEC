@@ -18,7 +18,7 @@ jobs:
           fetch-depth: 0
 
       - name: Dependências
-        run: echo "📦 Instalando dependências..." npm install --force      
+        run: echo "📦 Instalando dependência..." npm install --force      
 
       - name: Semver
         run: echo "🔢 Instalando semver..." npm install -g semver       
