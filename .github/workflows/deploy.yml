@@ -18,16 +18,16 @@ jobs:
           fetch-depth: 0
 
       - name: Dependências
-        run: npm install --force      
+        run: echo "📦 Instalando dependências..." npm install --force      
 
       - name: Semver
-        run: npm install -g semver       
+        run: echo "🔢 Instalando semver..." npm install -g semver       
 
       - name: Build
-        run: npm run build
+        run: echo "🏗️ Rodando build..." npm run build
 
       - name: Testes
-        run: npm test -- --coverage
+        run: echo "🧪 Executando testes..." npm test -- --coverage
 
       - name: Criar nova tag caso não exista
         env:
