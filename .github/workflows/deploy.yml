@@ -16,12 +16,18 @@ jobs:
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
+    
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
 
-      - name: Dependências
-        run: echo "📦 Instalando dependências..." npm install --force      
+      - name: Instalar dependências
+        run: npm install     
 
-      - name: Semver
-        run: echo "🔢 Instalando semver..." npm install -g semver       
+      - name: Instalar semver global
+        run: npm install -g semver    
+
 
       - name: Build
         run: echo "🏗️ Rodando build..." npm run build
